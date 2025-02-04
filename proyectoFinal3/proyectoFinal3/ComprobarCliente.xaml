@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectoFinal3.ComprobarCliente"
+             Title="ComprobarCliente">
+    <VerticalStackLayout>
+        <Label 
+            Text="Loggin como Cliente"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="UserEntry" Placeholder="Introduce Cliente"></Entry>
+        <Entry x:Name="PasswordEntry" Placeholder="Introduce Contraseña"></Entry>
+        <Button x:Name="btnLogging" Clicked="OnBtnLoggin" Text="Comprobar"></Button>
+        <Button x:Name="btnInsertarUser" Clicked="OnAddTestUserAsync" Text="Insertar Cliente"></Button>
+        <Label IsVisible="False" Text="" x:Name="ErrorLabel"></Label>
+    </VerticalStackLayout>
+    
+</ContentPage>
